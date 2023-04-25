@@ -696,6 +696,8 @@ const HomePage = () => {
                     Add-on service for managed OpenShift
                   </Text>
                   <Text>
+                    As of May 1st, 2023, Red Hat OpenShift Database Access will be discontinued as a managed service on Red Hat Hybrid Cloud Console. OpenShift Database Access will continue on GitHub as a community project. The project documentation, along with a Quick Start Guide can also be found on GitHub.
+
                     OpenShift Database Access helps accelerate development for
                     applications using cloud-hosted database services like
                     MongoDB Atlas, Crunchy Bridge, CockroachDB or Amazon’s
@@ -703,48 +705,7 @@ const HomePage = () => {
                     for popular database engines, including: MySQL, PostgreSQL,
                     SQL Server, MariaDB, and Oracle.
                   </Text>
-                  <Text>
-                    To learn more access the &nbsp;
-                    <Button
-                      onClick={() => {
-                        analytics.track('rhoda-get-started-click');
-                      }}
-                      iconPosition="right"
-                      icon={<ExternalLinkAltIcon />}
-                      isInline
-                      variant="link"
-                      component="a"
-                      target="_blank"
-                      href="https://access.redhat.com/documentation/en-us/red_hat_openshift_database_access/1/html-single/quick_start_guide/index"
-                    >
-                      quick start guide
-                    </Button>
-                  </Text>
                 </TextContent>
-              </StackItem>
-              <StackItem>
-                <Flex>
-                  <Button
-                    data-testid="hero-buttonInstall"
-                    ouiaId="button-rhoda-install"
-                    onClick={handleInstallModalOpen}
-                  >
-                    {textContent.installButton}
-                  </Button>
-                  <Button
-                    onClick={() => {
-                      analytics.track('rhoda-try-it-on-sandbox-button-click');
-                    }}
-                    iconPosition="right"
-                    icon={<ExternalLinkAltIcon />}
-                    component="a"
-                    target="_blank"
-                    variant="secondary"
-                    href="https://developers.redhat.com/developer-sandbox"
-                  >
-                    Try it in the Developer Sandbox
-                  </Button>
-                </Flex>
               </StackItem>
             </Stack>
           </GridItem>
